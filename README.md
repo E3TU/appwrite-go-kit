@@ -1,0 +1,2 @@
+# appwrite-go-kit
+AppwriteGoKit
