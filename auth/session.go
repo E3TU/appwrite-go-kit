@@ -3,7 +3,7 @@ package auth
 import (
 	"net/http"
 
-	"github.com/appwrite/sdk-for-go/account"
+	"github.com/appwrite/sdk-for-go/v7/account"
 )
 
 // Session is the credential material found on an incoming request.
@@ -62,6 +62,7 @@ func (v sdkVerify) Verify(secret string) (*User, error) {
 		return nil, ErrNoSession
 	}
 
+	// Copy the value so the caller's session never lands on the shared client.
 	sessionClient := v.s.sdk
 	sessionClient.AddHeader("X-Appwrite-Session", secret)
 

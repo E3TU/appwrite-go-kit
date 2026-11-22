@@ -9,7 +9,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/appwrite/sdk-for-go/query"
+	"github.com/appwrite/sdk-for-go/v7/query"
 	"github.com/e3tu/appwrite-base"
 	"github.com/e3tu/appwrite-base/auth"
 	"github.com/gin-gonic/gin"

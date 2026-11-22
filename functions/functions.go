@@ -5,8 +5,8 @@
 package functions
 
 import (
-	"github.com/appwrite/sdk-for-go/client"
-	"github.com/appwrite/sdk-for-go/functions"
+	"github.com/appwrite/sdk-for-go/v7/client"
+	"github.com/appwrite/sdk-for-go/v7/functions"
 )
 
 // Service exposes the functions operations the library supports.

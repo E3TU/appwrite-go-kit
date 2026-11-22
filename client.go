@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/appwrite/sdk-for-go/v7/client"
 )
 
 // newClient creates the Appwrite SDK client used by enabled capabilities.
@@ -31,7 +31,15 @@ func newClient(cfg Config) (client.Client, error) {
 	// SDK New keeps its own, so keep them in step.
 	c.Client.Timeout = c.Timeout
 
-	c.AddHeader("X-Appwrite-Project", cfg.ProjectID)
+	// The SDK reads the project from Config and sends X-Appwrite-Project on
+	// every service call.
+	if c.Config == nil {
+		c.Config = make(map[string]string, 1)
+	}
+	c.Config["project"] = cfg.ProjectID
+
+	// The API key is a transport-level credential: service methods only set
+	// the project header themselves, so the key goes on the client headers.
 	if cfg.APIKey != "" {
 		c.AddHeader("X-Appwrite-Key", cfg.APIKey)
 	}

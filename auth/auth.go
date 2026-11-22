@@ -9,8 +9,8 @@ package auth
 import (
 	"errors"
 
-	"github.com/appwrite/sdk-for-go/client"
-	"github.com/appwrite/sdk-for-go/users"
+	"github.com/appwrite/sdk-for-go/v7/client"
+	"github.com/appwrite/sdk-for-go/v7/users"
 	"github.com/gin-gonic/gin"
 )
 

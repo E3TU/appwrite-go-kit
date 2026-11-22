@@ -2,19 +2,24 @@ package base
 
 // Supported self-hosted Appwrite version matrix.
 //
-// These are informational constants for diagnostics and the verify
-// subcommand; they do not gate behaviour.
+// The library targets one Appwrite line at a time: the latest tested release.
+// There is no compatibility range. When a new Appwrite major ships, the SDK
+// pin and these constants move together, and the previous line is dropped.
 //
-// TODO: confirm both bounds against the deployment. The SDK at the pinned
-// version speaks ResponseFormat and offers no helper to negotiate versions.
+// These constants are informational for diagnostics and the verify
+// subcommand; they do not gate behaviour.
 const (
-	// AppwriteMinVersion is the oldest self-hosted release supported.
-	AppwriteMinVersion = "1.6.0"
+	// AppwriteMinVersion is the oldest self-hosted release tested.
+	AppwriteMinVersion = "2.7.0"
 
 	// AppwriteMaxVersion is the newest self-hosted release tested.
-	AppwriteMaxVersion = "1.8.0"
+	AppwriteMaxVersion = "2.7.4"
 
-	// ResponseFormat is the X-Appwrite-Response-Format the SDK speaks.
-	// Keep in sync with the SDK pin in go.mod.
-	ResponseFormat = "1.8.0"
+	// SDKVersion is the Appwrite Go SDK module this package is built against.
+	SDKVersion = "github.com/appwrite/sdk-for-go/v7 v7.21.0"
+
+	// ResponseFormat is the X-Appwrite-Response-Format the SDK speaks. It
+	// must match what the pinned SDK sends, so keep it in sync with
+	// SDKVersion.
+	ResponseFormat = "2.7.2"
 )

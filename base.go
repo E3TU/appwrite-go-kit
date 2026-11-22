@@ -7,7 +7,7 @@
 package base
 
 import (
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/appwrite/sdk-for-go/v7/client"
 	"github.com/e3tu/appwrite-base/auth"
 	"github.com/e3tu/appwrite-base/database"
 	"github.com/e3tu/appwrite-base/functions"

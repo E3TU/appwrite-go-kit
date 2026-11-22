@@ -8,8 +8,8 @@ package storage
 import (
 	"errors"
 
-	"github.com/appwrite/sdk-for-go/client"
-	"github.com/appwrite/sdk-for-go/storage"
+	"github.com/appwrite/sdk-for-go/v7/client"
+	"github.com/appwrite/sdk-for-go/v7/storage"
 )
 
 // Service exposes the storage operations the library supports.

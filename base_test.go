@@ -75,8 +75,15 @@ func TestNewClientOnly(t *testing.T) {
 	if _, ok := b.Functions(); ok {
 		t.Error("Functions() enabled on a client-only Base")
 	}
-	if got := b.Client().Endpoint; got != "http://appwrite.local/v1" {
+	c := b.Client()
+	if got := c.Endpoint; got != "http://appwrite.local/v1" {
 		t.Errorf("Endpoint = %q, want trailing slash trimmed", got)
+	}
+	if got := c.Config["project"]; got != "p" {
+		t.Errorf("client project = %q, want p", got)
+	}
+	if got := c.Headers["X-Appwrite-Response-Format"]; got != ResponseFormat {
+		t.Errorf("response format = %q, want %q", got, ResponseFormat)
 	}
 }
 

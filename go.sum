@@ -1,5 +1,5 @@
-github.com/appwrite/sdk-for-go v1.0.0 h1:ThD2kz0Aiytyl/+HYCUyCV3KdlvykySz4h8l/hVOfac=
-github.com/appwrite/sdk-for-go v1.0.0/go.mod h1:aFiOAbfOzGS3811eMCt3T9WDBvjvPVAfOjw10Vghi4E=
+github.com/appwrite/sdk-for-go/v7 v7.21.0 h1:xd0hoG0NImcLd6Kobkg7V8aCcoNnYR8HQ1l04ePo6P0=
+github.com/appwrite/sdk-for-go/v7 v7.21.0/go.mod h1:yLmz8wuSJqNTigkLOnp6zAALRRFdy+Hjm0YYAFEFbW4=
 github.com/bytedance/sonic v1.11.6 h1:oUp34TzMlL+OY1OUWxHqsdkgC/Zfc85zGqw9siXjrc0=
 github.com/bytedance/sonic v1.11.6/go.mod h1:LysEHSvpvDySVdC2f87zGWf6CIKJcAvqab1ZaiQtds4=
 github.com/bytedance/sonic/loader v0.1.1 h1:c+e5Pt1k/cy5wMveRDyk2X4B9hF4g7an8N3zCYjJFNM=

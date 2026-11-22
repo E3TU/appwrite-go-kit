@@ -3,7 +3,7 @@ package functions
 import (
 	"testing"
 
-	"github.com/appwrite/sdk-for-go/client"
+	"github.com/appwrite/sdk-for-go/v7/client"
 )
 
 func TestNewReturnsSDKService(t *testing.T) {

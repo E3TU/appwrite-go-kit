@@ -1,13 +1,11 @@
 module github.com/e3tu/appwrite-base
 
-go 1.22.5
+go 1.26.11
+
+require github.com/gin-gonic/gin v1.10.1
 
 require (
-	github.com/appwrite/sdk-for-go v1.0.0 // placeholder pin: confirm before release
-	github.com/gin-gonic/gin v1.10.1
-)
-
-require (
+	github.com/appwrite/sdk-for-go/v7 v7.21.0
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect
